@@ -7,10 +7,9 @@ abstract public class Aircraft {
     private static long idCounter;
 
     protected Aircraft(String name, Coordinates coordinates) {
-        nextId();
         this.name = name;
         this.coordinates = coordinates;
-        this.id = idCounter;
+        this.id = nextId();
     }
 
     private static long nextId() {

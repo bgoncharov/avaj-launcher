@@ -23,16 +23,23 @@ class Coordinates {
         return heigh;
     }
 
-    //Setters
-    public void setLongtitude(int lo) {
-        this.longtitude = lo;
+    public void changeLatitude(int lat_delta) {
+        this.latitude += lat_delta;
     }
 
-    public void setLatitude(int la) {
-        this.latitude = la;
+    public void changeLontitude (int long_delta) {
+        this.longtitude += long_delta;
     }
 
-    public void setHeigh(int he) {
-        this.heigh = he;
+    public boolean changeHeight (int h_delta) {
+        if (this.heigh + h_delta <= 0) {
+            this.heigh = 0;
+            return false;
+        }
+        else if (this.heigh + h_delta >= 100)
+            this.heigh = 100;
+        else
+            this.heigh += h_delta;
+        return true;
     }
 }
