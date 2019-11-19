@@ -1,6 +1,6 @@
 package avaj.simulator;
 
-class Coordinates {
+public class Coordinates {
     private int longtitude;
     private int latitude;
     private int heigh;

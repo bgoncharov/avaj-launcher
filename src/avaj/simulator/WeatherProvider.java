@@ -11,11 +11,11 @@ public class WeatherProvider {
         return ourProvider;
     }
 
-    public String getCurrentWeather(Cooedinates coordinates) {
-        Random rand = new Randon();
+    public String getCurrentWeather(Coordinates coordinates) {
+        Random rand = new Random();
 
         int nxt = rand.nextInt(1000);
-        int index = (nxt + coordinates.getHeights() + coordinates.getLatitude() + coordinates.getLongtitude()) % 4;
+        int index = (nxt + coordinates.getHeight() + coordinates.getLatitude() + coordinates.getLongtitude()) % 4;
         return weather[index];
     }
 }
