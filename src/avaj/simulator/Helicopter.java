@@ -1,9 +1,9 @@
 package avaj.simulator;
 
-public class Ballon extends Aircraft implements Flyable {
+public class Helicopter extends Aircraft implements Flyable {
     private static WeatherTower weatherTower;
 
-    class Ballon(String name, Coordinates coordinates) {
+    class Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates)
     }
 
