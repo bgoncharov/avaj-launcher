@@ -1,9 +1,9 @@
 all:
 
 compile:
-	javac src/avaj/simulator/*.java
+	javac avaj_launcher/*.java
 
-re: clean compile
+re: compile
 
 clean:
 	find . -depth -name "*.class" -delete

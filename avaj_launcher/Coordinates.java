@@ -1,4 +1,4 @@
-package avaj.simulator;
+package avaj_launcher;
 
 public class Coordinates {
     private int longtitude;

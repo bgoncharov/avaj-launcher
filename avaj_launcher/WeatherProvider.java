@@ -1,4 +1,4 @@
-package avaj.simulator;
+package avaj_launcher;
 import java.util.Random;
 
 public class WeatherProvider {

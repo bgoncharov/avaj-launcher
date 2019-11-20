@@ -1,16 +1,14 @@
-package avaj.simulator;
+package avaj_launcher;
 
-public class Helicopter extends Aircraft implements Flyable {
-
+public class Ballon extends Aircraft implements Flyable {
     private static WeatherTower weatherTower;
 
-    Helicopter(String name, Coordinates coordinates) {
+    Ballon(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 
     @Override
     public void updateCondition() {
-
     }
 
     @Override

@@ -1,4 +1,4 @@
-package avaj.simulator;
+package avaj_launcher;
 
 public abstract class AircraftFactory {
     public static Flyable newAircraft (String type, String name, int longtitude, int latitude, int heigh) {

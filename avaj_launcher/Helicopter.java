@@ -1,9 +1,10 @@
-package avaj.simulator;
+package avaj_launcher;
 
-public class JetPlain extends Aircraft implements Flyable {
+public class Helicopter extends Aircraft implements Flyable {
+
     private static WeatherTower weatherTower;
 
-    JetPlain(String name, Coordinates coordinates) {
+    Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 
