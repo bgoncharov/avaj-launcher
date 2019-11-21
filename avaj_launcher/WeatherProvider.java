@@ -15,7 +15,7 @@ public class WeatherProvider {
         Random rand = new Random();
 
         int nxt = rand.nextInt(1000);
-        int index = (nxt + coordinates.getHeight() + coordinates.getLatitude() + coordinates.getLongtitude()) % 4;
+        int index = (nxt + coordinates.getLongtitude() + coordinates.getHeight() + coordinates.getLatitude() + coordinates.getLongtitude()) % 4;
         return weather[index];
     }
 }

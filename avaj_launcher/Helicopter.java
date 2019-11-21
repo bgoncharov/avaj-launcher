@@ -19,11 +19,11 @@ public class Helicopter extends Aircraft implements Flyable {
         }
         else if (weather.equalsIgnoreCase("RAIN")) {
             coordinates.changeLontitude(5);
-            message = "Weather is bad. We are landing";
+            message = "Rain. Rain. Rain. Keep going.";
         }
         else if (weather.equalsIgnoreCase("FOG")) {
             coordinates.changeLontitude(1);
-            message = "Landing procedure is starting";
+            message = "Is it a fog? I don't see anything";
         }
         else if (weather.equalsIgnoreCase("SNOW")) {
             coordinates.changeHeight(-12);

@@ -14,19 +14,19 @@ public class JetPlain extends Aircraft implements Flyable {
         if (weather.equalsIgnoreCase("SUN")) {
             coordinates.changeLatitude(10);
             coordinates.changeHeight(2);
-            message = "Excellent weather to fly";
+            message = "I love sun! Let's fly.";
         }
         else if (weather.equalsIgnoreCase("RAIN")) {
             coordinates.changeLatitude(5);
-            message = "Weather is bad. We are landing";
+            message = "Forgot about this rain. Is it rain?";
         }
         else if (weather.equalsIgnoreCase("FOG")) {
             coordinates.changeLatitude(1);
-            message = "Landing procedure is starting";
+            message = "It's just a fog.";
         }
         else if (weather.equalsIgnoreCase("SNOW")) {
             coordinates.changeHeight(-7);
-            message = "Fucking snow brrr";
+            message = "Fucking snow brrr. Happy New Year!";
         }
         this.logMessage(message);
         if (coordinates.getHeight() == 0)
