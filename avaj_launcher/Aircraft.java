@@ -17,6 +17,14 @@ public class Aircraft {
         return idCounter;
     }
 
+    protected void logMessage(String info) {
+        System.out.println(getAircraftName() + ": " + info);
+    }
+
+    public String getAircraftName() {
+        return this.getClass().getSimpleName() + '#' + this.name + '(' + this.id + ')';
+    }
+
     public long getId() {
         return id;
     }

@@ -10,10 +10,33 @@ public class Helicopter extends Aircraft implements Flyable {
 
     @Override
     public void updateCondition() {
-
+        String weather = weatherTower.getWeather(coordinates);
+        String message = new String();
+        if (weather.equalsIgnoreCase("SUN")) {
+            coordinates.changeLontitude(10);
+            coordinates.changeHeight(2);
+            message = "Cool cool sun today";
+        }
+        else if (weather.equalsIgnoreCase("RAIN")) {
+            coordinates.changeLontitude(5);
+            message = "Weather is bad. We are landing";
+        }
+        else if (weather.equalsIgnoreCase("FOG")) {
+            coordinates.changeLontitude(1);
+            message = "Landing procedure is starting";
+        }
+        else if (weather.equalsIgnoreCase("SNOW")) {
+            coordinates.changeHeight(-12);
+            message = "Fucking snow brrr";
+        }
+        this.logMessage(message);
+        if (coordinates.getHeight() == 0)
+            weatherTower.unregister(this);
     }
 
     @Override
     public void registerTower(WeatherTower weatherTower) {
+        this.weatherTower = weatherTower;
+        weatherTower.register(this);
     }
 }
