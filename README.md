@@ -18,3 +18,13 @@ cd avaj-launcher
 ```
 
 Before launching make sure you have `java` and `javac` installed.
+
+In the root of project folder run the command:
+
+`make`
+
+After launching the programm log file `sumulation.txt` will appear in the folder.
+
+Run the command:
+
+`cat simulation.txt`
