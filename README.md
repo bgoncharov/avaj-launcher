@@ -12,5 +12,7 @@ So, this is the implementation of aircraft simulation program based on the class
 
 ## Compile and run
 
-```git clone https://github.com/bgoncharov/avaj-launcher.git
-cd avaj-launcher```
+```
+git clone https://github.com/bgoncharov/avaj-launcher.git
+cd avaj-launcher
+```
