@@ -6,4 +6,4 @@ So they decided to use a simulator where they configure and analyze multiple sce
 
 So, this is the implementation of aircraft simulation program based on the class diagram provided.
 
-![UML Diagram] ()
+<imt src="https://vk.com/away.php?to=https%3A%2F%2Fgithub.com%2Fbgoncharov%2Favaj-launcher%2Fblob%2Fmaster%2Favaj_uml.jpg">
