@@ -16,3 +16,5 @@ So, this is the implementation of aircraft simulation program based on the class
 git clone https://github.com/bgoncharov/avaj-launcher.git
 cd avaj-launcher
 ```
+
+Before launching make sure you have `java` and `javac` installed.
