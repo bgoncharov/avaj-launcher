@@ -26,7 +26,7 @@ public class JetPlain extends Aircraft implements Flyable {
         }
         else if (weather.equalsIgnoreCase("SNOW")) {
             coordinates.changeHeight(-7);
-            message = "Fucking snow brrr. Happy New Year!";
+            message = "Snow snow snow brrr. Happy New Year!";
         }
         this.logMessage(message);
         if (coordinates.getHeight() == 0)

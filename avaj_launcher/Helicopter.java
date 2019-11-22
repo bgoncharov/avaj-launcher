@@ -27,7 +27,7 @@ public class Helicopter extends Aircraft implements Flyable {
         }
         else if (weather.equalsIgnoreCase("SNOW")) {
             coordinates.changeHeight(-12);
-            message = "Fucking snow brrr";
+            message = "Very cold. It's snow brrr";
         }
         this.logMessage(message);
         if (coordinates.getHeight() == 0)
