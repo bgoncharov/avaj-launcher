@@ -24,9 +24,4 @@ public class Aircraft {
     public String getAircraftName() {
         return this.getClass().getSimpleName() + '#' + this.name + '(' + this.id + ')';
     }
-
-    public String getName() {
-        return name;
-    }
-
 }

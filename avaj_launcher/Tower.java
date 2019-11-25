@@ -6,12 +6,12 @@ public class Tower {
     private ArrayList<Flyable> observers = new ArrayList<>();
 
     public void register(Flyable flyable) {
-        System.out.println("Tower says: " + flyable.getName() + " regestered to weather tower.");
+        System.out.println("Tower says: " + flyable.getAircraftName() + " regestered to weather tower.");
         observers.add(flyable);
     }
 
     public void unregister(Flyable flyable) {
-        System.out.println("Tower says: " + flyable.getName() + " unregistered from weather tower.");
+        System.out.println("Tower says: " + flyable.getAircraftName() + " unregistered from weather tower.");
         observers.remove(flyable);
     }
 
